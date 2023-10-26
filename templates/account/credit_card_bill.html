@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        Card ID: <input type="text" value="{{credit_card.credit_id}}"> <br><br>
+        Account Name: <input type="text" value="{{credit_card.name}}"> <br><br>
+        Available Balance: <input type="text" value="{{account.account_balance}}"> <br><br>
+        Credit Card Amount: <input type="text" value="{{credit_card.amount}}" name="amount"> <br><br>
+        <input type="submit" value="Paybill">
+    </form>
+</body>
+</html>

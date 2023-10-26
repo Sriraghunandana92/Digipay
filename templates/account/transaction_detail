@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Complete Transaction Details</h1><br>
+    User Name: {{ account.user }} <br>
+    Account Number: {{ account.account_number }} <br>
+    Accoubt ID : {{ account.account_id }} <br>
+    <img src="{{kyc.image.url}}" alt="no img"> <br>
+    <br>
+    <h4>RECIEVER DETAILS</h4>
+    Reciever Name: {{reciever}} <br>
+    Reciever Amount {{transaction.amount}} <br>
+    {{transaction.amount.account_number}} <br>
+    {{transaction.amount.account.account_id}} <br>
+    <h4>KYC DETAILS</h4>
+    {{kyc.gender}} <br>
+    {{kyc.id}} <br>
+    {{kyc.date_of_birth}} <br>
+    <h4>TRANSACTION DETAILS</h4>
+    {{transaction.trannsaction_id}} <br>
+    {{transaction.description}} <br>
+    {{transaction.amount}} <br>
+    {{transaction.date}} <br>
+    {{transaction.statys}} <br>
+    {{transaction.transactin_type}} <br>
+</body>
+</html>
