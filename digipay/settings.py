@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6r=w^_!eb%8vfio*g5mg+tw%z+x693o*3+i5vx9e%gpsz=ckfy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['digipay-five.vercel.app','.now.sh','127.0.0.1','localhost']
 
 
 
